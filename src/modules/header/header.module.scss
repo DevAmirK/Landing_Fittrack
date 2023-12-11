@@ -1,0 +1,70 @@
+@import '../../styles/variables.scss';
+
+.wrapper{
+  width: 100%;
+  height: 4.5rem;
+  position: fixed !important;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#headerPlug{
+  width: 100%;
+  height: 4.5rem;
+}
+
+.logo{
+  width: 9rem;
+  height: 2rem;
+
+  color: $secondary;
+
+  border-radius: 2rem;
+  background-color: $primary;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+
+  &:hover{
+    box-shadow: 0 0 8px 4px rgb(67, 55, 235, 0.3);
+  }
+}
+
+.links{
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 500;
+  *{
+    color: $text-1;
+    transition: all 0.5s;
+  }
+
+  a:hover{
+    color: $primary;
+  }
+}
+
+@media screen and (max-width: $md){
+  .wrapper{
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: $xs){
+  .logo{
+    width: 7rem;
+  }
+  .links{
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+}

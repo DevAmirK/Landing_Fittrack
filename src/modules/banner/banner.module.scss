@@ -1,0 +1,130 @@
+@import '../../styles/variables.scss';
+
+.wrapper{
+  width: 100%;
+  height: 32.5rem;
+  background-color: $primary;
+  padding-left: 6rem;
+  overflow: hidden;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  i{
+    display: block;
+    width: 1px;
+    position: absolute;
+    top: 100%;
+  }
+}
+
+.banner, .text{
+  display: flex;
+  justify-content: center;
+}
+
+.banner{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  img{
+    max-height: 100%;
+    width: auto;
+  }
+}
+
+.text{
+  width: 100%;
+  height: 100%;
+  color: $secondary;
+  flex-direction: column;
+}
+
+.h1{
+  font-size: 2.5rem;
+}
+
+h1, .download{
+  margin-top: 2.5rem;
+}
+
+.download{
+  width: 14.5rem;
+
+  a{
+    width: 100%;
+    height: 3.5rem;
+
+    color: $primary;
+    font-size: 1.25em;
+    font-weight: 600;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+    background-color: $secondary;
+    transition: all 0.5s;
+
+    &:hover{
+      background-color: $grey;
+      box-shadow: 0 0 10px 5px rgb(220,220,220,0.2);
+    }
+  }
+}
+
+@media screen and (max-width: 840px){
+  .wrapper{
+    height: calc(100vh - 9rem);
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+  }
+
+  .text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    order: 1;
+  }
+
+  .banner{
+    overflow: hidden;
+    order: 0;
+  }
+
+  .banner img{
+    width: auto;
+    height: 100%;
+  }
+
+  .h1{
+    font-size: 1.5rem;
+  }
+  
+  h1, .download{
+    text-align: center;
+    margin: 0;
+  }
+
+  .download{
+    width: 90%;
+    height: min-content;
+  }
+}
+
+@media screen and (max-width: $xs){
+  .wrapper{
+    height: min-content;
+    padding: 0 0 2rem 0;
+  }
+  .banner img{
+    width: 100%;
+    height: min-content;
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.wrapper{
+  width: 100%;
+  background-image: linear-gradient(to right, $primary-d, $primary);
+}
+
+.screens{
+  width: 100%;
+  padding: 3rem 2rem 3rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  overflow-y: hidden;
+}
+
+.screenCard{
+  width: min-content;
+  height: min-content;
+}
+
+@media screen and (max-width: 1000px){
+  .screens{
+    overflow-x: scroll;
+    justify-content: flex-start;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .screens{
+    padding: 3rem 1rem 3rem 1rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+  }
+}

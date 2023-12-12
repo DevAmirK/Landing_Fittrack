@@ -4,7 +4,7 @@ Welcome to the landing page for the FitTrack mobile app!
 
 # Description
 
-This project represents a landing page for the FitTrack mobile app. Developed using Sass for managing styles and React JS for dynamic content rendering.
+This project represents a landing page for the FitTrack mobile app.
 
 # Functionality
 
@@ -12,5 +12,5 @@ This project represents a landing page for the FitTrack mobile app. Developed us
 - Sections: Includes multiple sections showcasing key features of the app and information about it.
 - Sass and React JS: Utilizes Sass for style management and React JS for creating dynamic content and interfaces.
 
-#Preview#
+# Preview
 https://dreamy-salmiakki-efe4c5.netlify.app/

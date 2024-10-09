@@ -13,4 +13,4 @@ This project represents a landing page for the FitTrack mobile app.
 - Sass and React JS: Utilizes Sass for style management and React JS for creating dynamic content and interfaces.
 
 # Preview
-https://dreamy-salmiakki-efe4c5.netlify.app/
+https://fittrack-amir.netlify.app/
